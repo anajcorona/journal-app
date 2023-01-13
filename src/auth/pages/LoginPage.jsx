@@ -42,7 +42,7 @@ export const LoginPage = () => {
 
 
               <Grid container direction='row' justifyContent='end' >
-                <Link component={RounterLink} color='inherit' to='/auth/register'>
+                <Link component={ RounterLink } color='inherit' to='/auth/register'>
                   Crearuna cuenta
                 </Link>
               </Grid>

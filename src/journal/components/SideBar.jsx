@@ -1,14 +1,14 @@
+import { Box, Divider, Drawer, Grid, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Toolbar, Typography } from '@mui/material'
 import { TurnedInNot } from '@mui/icons-material';
-import { Drawer, Box, Toolbar, Typography, Divider, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Grid } from '@mui/material';
 
 export const SideBar = ({ drawerWidth = 240 }) => {
   return (
     <Box
         component='nav'
-        sx={{ width: { sm: drawerWidth } , flexShrink: { sm: 0 } }}
+        sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
     >
         <Drawer
-            varirant='permanent'
+            variant='permanent'
             open
             sx={{ 
                 display: { xs: 'block' }, 
@@ -41,6 +41,7 @@ export const SideBar = ({ drawerWidth = 240 }) => {
             </List>
 
         </Drawer>
+
     </Box>
   )
 }
