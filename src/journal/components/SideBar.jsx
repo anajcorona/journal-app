@@ -1,7 +1,11 @@
 import { Box, Divider, Drawer, Grid, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Toolbar, Typography } from '@mui/material'
-import { TurnedInNot } from '@mui/icons-material';
+import { ConstructionOutlined, TurnedInNot } from '@mui/icons-material';
+import { useSelector } from 'react-redux';
 
 export const SideBar = ({ drawerWidth = 240 }) => {
+
+    const { displayName } = useSelector(state => state.auth);
+
   return (
     <Box
         component='nav'
@@ -17,7 +21,7 @@ export const SideBar = ({ drawerWidth = 240 }) => {
         >
             <Toolbar>
                 <Typography variant='h6' noWrap component='div'>
-                    Ana Corona
+                    {displayName}
                 </Typography>
             </Toolbar>
             <Divider />
@@ -32,7 +36,7 @@ export const SideBar = ({ drawerWidth = 240 }) => {
                                 </ListItemIcon>
                                 <Grid container>
                                     <ListItemText primary={ text }/>
-                                    <ListItemText secondary={ 'Nb j jhb jhb ANANANANANA NANA kjdbv kjb jh jh jhvwajhf bjhb' }/>
+                                    <ListItemText secondary={ 'This is a task where you can...' }/>
                                 </Grid>
                             </ListItemButton>
                         </ListItem>
