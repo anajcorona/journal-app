@@ -14,7 +14,7 @@ export const AppRouter = () => {
   return (
     <Routes>
         {
-          (status === 'autheticated')
+          (status === 'authenticated')
           ? <Route path='/*' element={ <JorunalRoutes />} />
           : <Route path='/auth/*' element={ <AuthRoutes />}/>
         }
