@@ -26,7 +26,6 @@ export const notAuthenticatedState = {
 };
 
 export const demoUser = {
-    status: 'authenticated',
     uid: 'ABC123',
     email: 'demo@google.com',
     displayName: 'Demo user',
